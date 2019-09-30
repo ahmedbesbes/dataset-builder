@@ -19,4 +19,4 @@ python dataset_builder.py - -limit 20 - -delete_history yes
 
 Here's what the output looks like:
 
-<img src = "./images/output.png" >
+<img src = "./images/output.png" height="75%">
