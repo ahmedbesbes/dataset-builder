@@ -1,8 +1,10 @@
 import shutil
 import os
+import time
 import argparse
 from google_images_download import google_images_download
 from image_uploader import upload_images_to_makesense
+from selenium import webdriver
 
 
 def download(keywords, args):
@@ -38,10 +40,6 @@ def process_downloads(args):
                     args.output_directory, class_folder, f'{class_folder}_{i+1}.{extension}')
                 os.rename(old_path, new_path)
 
-    if args.task in ['detection', 'segmentation']:
-        upload_images_to_makesense(args)
-
-
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument('--output_directory', type=str, default='../data/')
@@ -72,3 +70,7 @@ if __name__ == "__main__":
     keywords = ','.join(keywords)
     _ = download(keywords, args)
     process_downloads(args)
+
+    if args.task in ['detection', 'segmentation']:
+        driver = webdriver.Chrome(args.driver)
+        upload_images_to_makesense(args, driver)
