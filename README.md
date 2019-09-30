@@ -1,4 +1,4 @@
-# dataset-builder
+# Dataset Builder
 
 A script to help you quickly build custom computer vision datasets for classification and detection.
 
