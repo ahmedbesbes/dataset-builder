@@ -2,7 +2,7 @@
 
 A script to help you quickly build custom computer vision datasets for classification and detection.
 
-If you opt for the detection task, the script uploads the downloaded images with the corresponding labels to http://makesense.ai (or http://localhost:3000) so that all you have to do in annotate yourself. 
+If you opt for the detection task, the script uploads the downloaded images with the corresponding labels to http://makesense.ai (or locally to http://localhost:3000) so that all you have to do in annotate yourself. 
 
 Once the annotation is done, your labels can be exported and you'll be ready to train your awesome models.
 
