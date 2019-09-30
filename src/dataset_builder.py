@@ -2,6 +2,8 @@ import shutil
 import os
 import argparse
 from google_images_download import google_images_download
+from image_uploader import upload_images_to_makesense
+
 
 def download(keywords, args):
     if args.delete_history == 'yes':
@@ -36,13 +38,19 @@ def process_downloads(args):
                     args.output_directory, class_folder, f'{class_folder}_{i+1}.{extension}')
                 os.rename(old_path, new_path)
 
+    if args.task in ['detection', 'segmentation']:
+        upload_images_to_makesense(args)
+
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument('--output_directory', type=str, default='../data/')
     parser.add_argument('--limit', type=int, default=20)
-    parser.add_argument('--delete_history', type=str, default=0, choices=['yes', 'no'])
-    parser.add_argument('--task', type=str, choices=['classification', 'detection', 'segmentation'])
+    parser.add_argument('--delete_history', type=str,
+                        default=0, choices=['yes', 'no'])
+    parser.add_argument(
+        '--task', type=str, choices=['classification', 'detection', 'segmentation'])
+    parser.add_argument('--driver', type=str, default='../driver/chromedriver')
     args = parser.parse_args()
 
     print('Hello there. Want to build you custom computer vision dataset? Let\'s go !')
