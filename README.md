@@ -17,6 +17,6 @@ python dataset_builder.py - -limit 20 - -delete_history yes
 
 <img src = "./images/screenshot.png" >
 
-Here's what the output looks like:
+Here's what the output looks like after the download:
 
-<img src = "./images/output.png" height="75%">
+<img src = "./images/output.png" width=350>
