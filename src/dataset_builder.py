@@ -31,7 +31,7 @@ def process_downloads(args):
             old_path = os.path.join(
                 args.output_directory, class_folder, filename)
             new_path = os.path.join(
-                args.output_directory, class_folder, f'{class_folder}_{i+1}_.{extension}')
+                args.output_directory, class_folder, f'{class_folder}_{i+1}.{extension}')
             os.rename(old_path, new_path)
 
 
