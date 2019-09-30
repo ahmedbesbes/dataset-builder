@@ -9,7 +9,7 @@ Once the annotation is done, your labels can be exported and you'll be ready to 
 # Requirements:
 
 - google_images_download: ``pip install google_images_download``
-- Selenium: pip install - U selenium
+- Selenium: pip install -U selenium
 - Chrome Driver
 
 In case you wish to run make-sense locally:
@@ -51,7 +51,7 @@ Here's what the output looks like after the download:
 
 # Object detection with make-sense:
 
-Makesense is an awesome open source webapp that lets you easily label your image dataset for tasks such as localization.
+Make Sense is an awesome open source webapp that lets you easily label your image dataset for tasks such as localization.
 
 You can check it out here: https://www.makesense.ai/ 
 You can also clone it and run it locally (for better performance): https://github.com/SkalskiP/make-sense
