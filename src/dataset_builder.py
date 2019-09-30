@@ -40,6 +40,7 @@ if __name__ == "__main__":
     parser.add_argument('--output_directory', type=str, default='../data/')
     parser.add_argument('--limit', type=int, default=20)
     parser.add_argument('--delete_history', type=str, default=0, choices=['yes', 'no'])
+    parser.add_argument('--task', type=str, choices=['classification', 'detection', 'segmentation'])
     args = parser.parse_args()
 
     print('Hello there. Want to build you custom computer vision dataset? Let\'s go !')
