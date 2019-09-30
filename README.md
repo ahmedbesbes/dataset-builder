@@ -11,7 +11,7 @@ A script to help you quickly build custom computer vision datasets
 # Example:
 
 ```bash
-python dataset_builder.py - -limit 20 - -delete_history yes
+python dataset_builder.py --limit 20 --delete_history yes
 
 ```
 
