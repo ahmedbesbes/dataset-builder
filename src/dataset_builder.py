@@ -7,7 +7,8 @@ def download(keywords, args):
     if args.delete_history == 'yes':
         folders = os.listdir(args.output_directory)
         for folder in folders:
-            shutil.rmtree(os.path.join(args.output_directory, folder))
+            if os.path.isdir(os.path.join(args.output_directory, folder)):
+                shutil.rmtree(os.path.join(args.output_directory, folder))
 
     print(f'download {args.limit} images realed to the query {keywords}')
     response = google_images_download.googleimagesdownload()
@@ -24,15 +25,16 @@ def download(keywords, args):
 def process_downloads(args):
     class_folders = os.listdir(args.output_directory)
     for class_folder in class_folders:
-        filenames = os.listdir(os.path.join(
-            args.output_directory, class_folder))
-        for i, filename in enumerate(filenames):
-            extension = filename.split('.')[-1]
-            old_path = os.path.join(
-                args.output_directory, class_folder, filename)
-            new_path = os.path.join(
-                args.output_directory, class_folder, f'{class_folder}_{i+1}.{extension}')
-            os.rename(old_path, new_path)
+        if os.path.isdir(os.path.join(args.output_directory, class_folder)):
+            filenames = os.listdir(os.path.join(
+                args.output_directory, class_folder))
+            for i, filename in enumerate(filenames):
+                extension = filename.split('.')[-1]
+                old_path = os.path.join(
+                    args.output_directory, class_folder, filename)
+                new_path = os.path.join(
+                    args.output_directory, class_folder, f'{class_folder}_{i+1}.{extension}')
+                os.rename(old_path, new_path)
 
 
 if __name__ == "__main__":
