@@ -51,6 +51,8 @@ Here's what the output looks like after the download:
 
 # Object detection with make-sense:
 
+**This only works if you choose a detection or segmentation task**
+
 Make Sense is an awesome open source webapp that lets you easily label your image dataset for tasks such as localization.
 
 You can check it out here: https://www.makesense.ai/ 
