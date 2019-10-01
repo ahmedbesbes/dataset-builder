@@ -40,14 +40,15 @@ def process_downloads(args):
                     args.output_directory, class_folder, f'{class_folder}_{i+1}.{extension}')
                 os.rename(old_path, new_path)
 
+
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument('--output_directory', type=str, default='../data/')
     parser.add_argument('--limit', type=int, default=20)
     parser.add_argument('--delete_history', type=str,
-                        default=0, choices=['yes', 'no'])
+                        default='yes', choices=['yes', 'no'])
     parser.add_argument(
-        '--task', type=str, choices=['classification', 'detection', 'segmentation'])
+        '--task', type=str, choices=['classification', 'detection', 'segmentation'], default='detection')
     parser.add_argument('--driver', type=str, default='../driver/chromedriver')
     parser.add_argument('--run_local', type=int, choices=[0, 1], default=0)
     args = parser.parse_args()
