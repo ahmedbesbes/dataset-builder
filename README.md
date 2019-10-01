@@ -51,9 +51,9 @@ Here's what the output looks like after the download:
 
 <img src = "./images/output.png" width=350>
 
-# Object detection with make-sense:
+### Object detection with make-sense:
 
-**This only works if you choose a detection or segmentation task**
+This only works if you choose a **detection** or **segmentation** task
 
 Make Sense is an awesome open source webapp that lets you easily label your image dataset for tasks such as localization.
 
