@@ -6,7 +6,7 @@ If you opt for the detection task, the script uploads the downloaded images with
 
 Once the annotation is done, your labels can be exported and you'll be ready to train your awesome models.
 
-# Requirements:
+### Requirements:
 
 - google_images_download: ``pip install google_images_download``
 - Selenium: pip install -U selenium
@@ -29,7 +29,7 @@ npm install
 npm start
 ```
 
-# Example:
+### Example:
 
 When you run the script, you can specify the following arguments:
 
@@ -62,7 +62,7 @@ You can also clone it and run it locally (for better performance): https://githu
 
 In order to use this tool, I'll be running it locally and interface with it using Selenium: Once the dataset is downloaded, Selenium opens up a Chrome browser, upload the images to the app and fill in the label list: this ultimately allows you to annotate.
 
-# Demo [Youtube video]
+### Demo [Youtube video]
 
 <p align="center">
   <a href="https://www.youtube.com/watch?v=qXLvMr9mrP4">
@@ -70,7 +70,7 @@ In order to use this tool, I'll be running it locally and interface with it usin
   </a>
 </p>
 
-# TODO :grin:
+### TODO :grin:
 Please feel free to contribute ! Report any bugs in the issue section, or request any feature you'd like to see shipped:
 
 - [ ] Accelerate the download of images via multiprocessing
@@ -78,7 +78,7 @@ Please feel free to contribute ! Report any bugs in the issue section, or reques
 - [ ] Integrate automatic tagging using pre-trained networks
 
 
-# LICENSE
+### LICENSE
 
 Please be aware that this code is under the GPL3 license. 
 You must report each utilisation of this code to the author of this code (ahmedbesbes). 
