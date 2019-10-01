@@ -38,6 +38,7 @@ When you run the script, you can specify the following arguments:
 - `delete_history`: whether you choose to erase previous downloads or not
 - `task`: classification, detection or segmentation
 - `driver`: path to chrome driver
+- `run_local` : whether or not to use makesense locally
 
 ```bash
 python dataset_builder.py --limit 20 --delete_history yes
