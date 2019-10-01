@@ -63,5 +63,8 @@ In order to use this tool, I'll be running it locally and interface with it usin
 
 # Demo [Youtube video]
 
-[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/qXLvMr9mrP4/0.jpg)](https://www.youtube.com/watch?v=qXLvMr9mrP4)
-
+<p align="center">
+  <a href="https://www.youtube.com/watch?v=qXLvMr9mrP4">
+    <img src="https://img.youtube.com/vi/qXLvMr9mrP4/0.jpg">
+  </a>
+</p>
