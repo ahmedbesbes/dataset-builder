@@ -10,9 +10,10 @@ Once the annotation is done, your labels can be exported and you'll be ready to 
 
 - google_images_download: ``pip install google_images_download``
 - Selenium: pip install -U selenium
-- Chrome Driver
+- ChromeDriver 77.0.3865.40
 
-In case you wish to run make-sense locally:
+
+In case you wish to run Maske Sense locally:
 
 ```bash
 # clone repository
