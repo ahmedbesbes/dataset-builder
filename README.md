@@ -61,7 +61,7 @@ You can also clone it and run it locally (for better performance): https://githu
 
 In order to use this tool, I'll be running it locally and interface with it using Selenium: Once the dataset is downloaded, Selenium opens up a Chrome browser, upload the images to the app and fill in the label list: this ultimately allows you to annotate.
 
-# Demo
+# Demo [Youtube video]
 
 [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/qXLvMr9mrP4/0.jpg)](https://www.youtube.com/watch?v=qXLvMr9mrP4)
 
