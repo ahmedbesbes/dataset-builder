@@ -49,6 +49,7 @@ if __name__ == "__main__":
     parser.add_argument(
         '--task', type=str, choices=['classification', 'detection', 'segmentation'])
     parser.add_argument('--driver', type=str, default='../driver/chromedriver')
+    parser.add_argument('--run_local', type=int, choices=[0, 1], default=0)
     args = parser.parse_args()
 
     print('Hello there. Want to build you custom computer vision dataset? Let\'s go !')
