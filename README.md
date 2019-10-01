@@ -69,3 +69,17 @@ In order to use this tool, I'll be running it locally and interface with it usin
     <img src="https://img.youtube.com/vi/qXLvMr9mrP4/0.jpg">
   </a>
 </p>
+
+# TODO :grin:
+Please feel free to contribute ! Report any bugs in the issue section, or request any feature you'd like to see shipped:
+
+- [ ] Accelerate the download of images via multiprocessing
+- [ ] Apply a quality check on the images
+- [ ] Integrate automatic tagging using pre-trained networks
+
+
+# LICENSE
+
+Please be aware that this code is under the GPL3 license. 
+You must report each utilisation of this code to the author of this code (ahmedbesbes). 
+Please push your code using this API on a forked Github repo public. 
