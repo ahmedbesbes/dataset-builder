@@ -1,7 +1,5 @@
 import os
 import time
-from selenium.webdriver.common.keys import Keys
-
 
 def upload_images_to_makesense(args, driver):
     if bool(args.run_local):
