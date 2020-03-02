@@ -14,6 +14,12 @@ Once the annotation is done, your labels can be exported and you'll be ready to 
   - `git clone https://github.com/ultralytics/flickr_scraper`
   - `cd flickr_scraper`
   - `pip install -U -r requirements.txt`
+  - Request a Flickr API key and secret: https://www.flickr.com/services/apps/create/apply
+  - create a `config.yaml` file inside `src/` that looks like this
+    ```yaml
+    key: "XXXXXXXXXXXXXXX"
+    secret: "XXXXXXXXXXXXXXX"
+    ```
 - Selenium: pip install -U selenium
 - ChromeDriver 77.0.3865.40
 
