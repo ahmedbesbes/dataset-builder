@@ -1,12 +1,10 @@
 import os
 import time
 
+
 def upload_images_to_makesense(args, driver):
-    if bool(args.run_local):
-        driver.get('http://localhost:3000')
-    else:
-        driver.get('https://www.makesense.ai/')
-    
+
+    driver.get('https://www.makesense.ai/')
     button = driver.find_element_by_xpath(
         "//div[@class='RightColumn']//div[@class='TextButton']")
     button.click()

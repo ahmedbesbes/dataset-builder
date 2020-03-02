@@ -3,3 +3,4 @@ data/*
 !data/.gitkeep
 .DS_Store
 src/__pycache__/*
+src/config.yaml
